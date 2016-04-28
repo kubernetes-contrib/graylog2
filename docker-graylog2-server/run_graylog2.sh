@@ -12,7 +12,7 @@ sed -i "s#^mongodb_uri .*#mongodb_uri = mongodb://mongo/graylog2#" /etc/graylog/
 
 sed -i "s#^rest_listen_uri .*#rest_listen_uri = http://0.0.0.0:12900/#" /etc/graylog/server/server.conf
 
-sed -i "s#.*elasticsearch_discovery_zen_ping_multicast_enabled.*#elasticsearch_discovery_zen_ping_multicast_enabled = true#" /etc/graylog/server/server.conf
+sed -i "s#.*elasticsearch_discovery_zen_ping_multicast_enabled.*#elasticsearch_discovery_zen_ping_multicast_enabled = false#" /etc/graylog/server/server.conf
 sed -i "s#.*elasticsearch_discovery_zen_ping_unicast_hosts.*#elasticsearch_discovery_zen_ping_unicast_hosts = elastic:9300#" /etc/graylog/server/server.conf
 
 
