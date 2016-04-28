@@ -2,10 +2,11 @@ FROM java:8-jre
 
 RUN apt-get update && apt-get install -y pwgen
 
-# https://packages.graylog2.org/releases/graylog2-server/graylog-1.3.4.tgz
-ENV GL_VERSION=1.3.4
+# https://packages.graylog2.org/releases/graylog/graylog-2.0.0.tgz
+
+ENV GL_VERSION=2.0.0
 ENV GL_PACKAGE=graylog-${GL_VERSION}.tgz
-ENV SOURCE_URL=https://packages.graylog2.org/releases/graylog2-server/${GL_PACKAGE}
+ENV SOURCE_URL=https://packages.graylog2.org/releases/graylog/${GL_PACKAGE}
 
 RUN \
   cd /tmp && \

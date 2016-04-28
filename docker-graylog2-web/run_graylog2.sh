@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GRAYLOG_SERVER_SECRET=${GRAYLOG_SERVER_SECRET:-82cqn9yshBFt98PQx2MLC60RTI0wc59TxC8OoPKTYgsiDrnRryzM7gvmrEkgSTeCCrEjmyQ23CNDi6f92Rib3KjmKC9EmNRg}
-GRAYLOG_SERVER=${GRAYLOG_SERVER:-"http://graylog2:12900/"}
+GRAYLOG_SERVER=${GRAYLOG_SERVER:-"http://graylog-svc:12900/"}
 
 
 sed -i "s/application.secret.*/application.secret="$GRAYLOG_SERVER_SECRET"/" /graylog2/conf/graylog-web-interface.conf
